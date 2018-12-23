@@ -26,7 +26,14 @@
   text-align: center;
   display: inline-block;
 }
+.navItem.on{
+  color: red;
+}
 
 .article{
   line-height: 80rpx;
+}
+
+.scroll-con{
+  /* height: 100vh; */
 }
