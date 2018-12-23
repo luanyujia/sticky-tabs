@@ -1,7 +1,7 @@
 <view class='wrap'>
   <view class='top'>顶部内容</view>
   <view class='nav'>
-    <scroll-view class='navList' scroll-x scroll-left="{{scrollLeft}}">
+    <scroll-view class='navList' scroll-x scroll-left="{{scrollLeft}}" scroll-with-animation="true">
       <block wx:for="{{navList}}" wx:key="navList">
         <view class="navItem {{ currentTab == index ? 'on' : ''}}" bindtap="navTap" data-index="{{index}}">{{item.title}}</view>
       </block>
