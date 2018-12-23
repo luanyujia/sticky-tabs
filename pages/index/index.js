@@ -5,7 +5,7 @@ Page({
    */
   data: {
     currentTab: 0,
-    scroll: false,
+    scrollLeft: 0,
     navList: [{
       title: '锚点1',
       background: '#f17c67',
@@ -164,7 +164,10 @@ Page({
       duration:0
     })
 
+    this.scrollLeft();
+
   },
+
   onPageScroll(e){
     let scrollTop = e.scrollTop;
     let boxHeight = this.data.boxHeight;
@@ -180,7 +183,16 @@ Page({
         })
       }
     });
+    
+    this.scrollLeft();
 
+  },
+
+  scrollLeft(){
+    let currentTab = this.data.currentTab;
+    this.setData({
+      scrollLeft: (currentTab - 2) * 160
+    })
   },
 
   /**
@@ -189,6 +201,7 @@ Page({
   onLoad: function (options) {
     let _this = this;
     let query = wx.createSelectorQuery();
+
     // 计算顶部高度
     query.select(".top").boundingClientRect(function(rect) {
       _this.setData({
