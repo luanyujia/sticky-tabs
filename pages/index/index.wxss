@@ -33,7 +33,3 @@
 .article{
   line-height: 80rpx;
 }
-
-.scroll-con{
-  /* height: 100vh; */
-}

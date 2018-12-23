@@ -216,7 +216,6 @@ Page({
       let boxHeight = [_this.data.topHeight]
       let hei = _this.data.topHeight;
       rect.forEach(e => {
-        console.log(e.height)
         hei += e.height;
         boxHeight.push(hei)
       });
