@@ -158,7 +158,6 @@ Page({
     this.setData({
       currentTab: currentTab
     })
-    console.log(currentTab)
     let boxHeight = this.data.boxHeight;
     wx.pageScrollTo({
       scrollTop: boxHeight[currentTab],
@@ -167,7 +166,21 @@ Page({
 
   },
   onPageScroll(e){
-    
+    let scrollTop = e.scrollTop;
+    let boxHeight = this.data.boxHeight;
+    let currentTab = this.data.currentTab;
+
+    boxHeight.forEach((item, index) => {
+      if (
+        scrollTop >= boxHeight[index] &&
+        scrollTop < boxHeight[index + 1]
+      ) {
+        this.setData({
+          currentTab: index
+        })
+      }
+    });
+
   },
 
   /**
@@ -176,26 +189,12 @@ Page({
   onLoad: function (options) {
     let _this = this;
     let query = wx.createSelectorQuery();
-    // 计算屏幕高度
-    wx.getSystemInfo({
-      success: function(res) {
-        _this.setData({
-          windowHeight:res.windowHeight
-        })
-      },
-    })
     // 计算顶部高度
     query.select(".top").boundingClientRect(function(rect) {
       _this.setData({
         topHeight:rect.height
       })
     }).exec();
-    // 计算菜单高度
-    query.select(".nav").boundingClientRect(function(rect) {
-      _this.setData({
-        navHeight:rect.height
-      })
-    }).exec(); 
 
     query.selectAll(".box").boundingClientRect(function(rect) {
       _this.setData({
