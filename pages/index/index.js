@@ -159,19 +159,15 @@ Page({
       currentTab: currentTab
     })
     console.log(currentTab)
+    let boxHeight = this.data.boxHeight;
+    wx.pageScrollTo({
+      scrollTop: boxHeight[currentTab],
+      duration:0
+    })
+
   },
   onPageScroll(e){
-    // let _this = this;
-    // let topHeight = this.data.topHeight;
-    // if(e.scrollTop < topHeight){
-    //   _this.setData({
-    //     scroll:false
-    //   })
-    // } else{
-    //   _this.setData({
-    //     scroll:true
-    //   })
-    // }
+    
   },
 
   /**
@@ -205,56 +201,18 @@ Page({
       _this.setData({
         boxHeight:rect
       })
+      let boxHeight = [_this.data.topHeight]
+      let hei = _this.data.topHeight;
+      rect.forEach(e => {
+        console.log(e.height)
+        hei += e.height;
+        boxHeight.push(hei)
+      });
+      _this.setData({
+        boxHeight:boxHeight
+      })
     }).exec();
 
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
