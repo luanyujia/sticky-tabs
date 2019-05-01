@@ -1,6 +1,7 @@
 
 ### 微信小程序不使用scroll-view做的吸顶+锚点
 
+![效果图](http://files.git.oschina.net/group1/M00/07/8B/PaAvDFzJrFuAclGpAEmLXbHLtz4091.gif?token=d712178c581af56e3a11a63390cc2d2c&ts=1556720731&attname=QQ20190501-214917.gif&disposition=inline)
 
 ### 引入组件
 
@@ -46,5 +47,3 @@ scrollTop为页面滚动的距离，使用示例如下
     })
   },
 ```
-
-![效果图](http://files.git.oschina.net/group1/M00/07/8B/PaAvDFzJq9yAF_KQAEiKrll48dQ377.gif?token=593789cab1ef9a140c2f9d716178abec&ts=1556720604&attname=QQ20190501-214817.gif&disposition=inline)
