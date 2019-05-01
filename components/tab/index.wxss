@@ -1,0 +1,42 @@
+/* components/tab/index.wxss */
+
+.i-tabs-tab {
+  /* flex: 1; */
+  display: inline-flex;
+  padding: 0 30rpx;
+  flex-direction: column;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+
+.i-tabs-tab-bar {
+  display: block;
+  width: 50rpx;
+  height: 4rpx;
+  border-radius: 2rpx;
+  position: absolute;
+  bottom: 7rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2d8cf0;
+}
+
+.i-tabs-tab-title {
+  font-size: 28rpx;
+  text-align: center;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.i-tabs-tab-title-current {
+  font-weight: bold;
+  /* color: #2d8cf0; */
+}
+
+.i-tabs-tab-scroll {
+  box-sizing: content-box;
+}

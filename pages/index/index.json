@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "sticky": "/components/sticky/index",
+    "sticky-item": "/components/sticky-item/index"
+  }
 }

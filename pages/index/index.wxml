@@ -1,19 +1,15 @@
 <view class='wrap'>
-  <view class='top'>顶部内容</view>
-  <view class='nav'>
-    <scroll-view class='navList' scroll-x scroll-left="{{scrollLeft}}" scroll-with-animation="true">
-      <block wx:for="{{navList}}" wx:key="navList">
-        <view class="navItem {{ currentTab == index ? 'on' : ''}}" bindtap="navTap" data-index="{{index}}">{{item.title}}</view>
-      </block>
-    </scroll-view>
-  </view>
-  <view class="scroll-con" >
+  <view class='other'>顶部内容</view>
+  <sticky scrollTop="{{scrollTop}}" tabList="{{navList}}">
     <block wx:for="{{navList}}" wx:key="navList">
-      <view class='box' style='background:{{item.background}}'>
-        <block wx:for="{{item.content}}" wx:key="item">
-          <view class='article'>{{item.article}}</view>
-        </block>
-      </view>
+      <sticky-item>
+        <view class='box' style='background:{{item.background}}'>
+          <block wx:for="{{item.content}}" wx:key="item">
+            <view class='article'>{{item.article}}</view>
+          </block>
+        </view>
+      </sticky-item>
     </block>
-  </view>
+  </sticky>
+    <view class='other'>底部内容</view>
 </view>

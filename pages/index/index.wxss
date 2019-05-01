@@ -1,33 +1,8 @@
-.top {
+.other {
   background: #999;
   height: 500rpx;
   text-align: center;
   line-height: 200rpx;
-}
-
-.nav {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-}
-
-.navList {
-  background: #fff000;
-  line-height: 80rpx;
-  width: 100%;
-  white-space: nowrap;
-}
-
-.navItem {
-  width: 160rpx;
-  text-align: center;
-  display: inline-block;
-}
-.navItem.on{
-  color: red;
 }
 
 .article{

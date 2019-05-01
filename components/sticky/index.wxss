@@ -1,0 +1,38 @@
+/* components/sticky/index.wxss */
+
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  background-color: orange;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+
+/* by jansan */
+
+/* sticky中自定义的tabs样式 */
+
+.custom-sticky-tabs {
+  background-color: #fff !important;
+  /* border-bottom: 1px solid #eaeaea !important; */
+}
+
+/* sticky中自定义的tab样式 */
+
+.custom-sticky-tab {
+  height: 100rpx !important;
+}
+
+/* sticky中自定义的tab-title样式 */
+
+.custom-sticky-tab-title {
+  color: #999 !important;
+}
+
+.custom-sticky-tab-bar {
+  width: 120rpx !important;
+  bottom: 0 !important;
+}

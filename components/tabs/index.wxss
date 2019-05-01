@@ -1,0 +1,25 @@
+/* components/tabs/index.wxss */
+.i-tabs {
+  /* width: 100%; */
+  display: block;
+  /* height: 86rpx; */
+  /* line-height: 86rpx; */
+  box-sizing: border-box;
+  position: relative;
+  /* justify-content: space-around;
+  align-items: center; */
+  /* background-color: #fff; */
+}
+
+
+.i-tabs-scroll {
+  display: block;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.i-tabs-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}

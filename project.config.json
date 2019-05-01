@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
-	"appid": "wx7ebaa8300dc28507",
-	"projectname": "top-anchor",
+	"appid": "",
+	"projectname": "sticky-tabs",
 	"condition": {
 		"search": {
 			"current": -1,
