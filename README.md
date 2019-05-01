@@ -46,3 +46,5 @@ scrollTop为页面滚动的距离，使用示例如下
     })
   },
 ```
+
+![Image text](https://gitee.com/luanyujia/sticky-tabs/blob/master/images/temp/QQ20190501-214917.gif)
