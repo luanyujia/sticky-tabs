@@ -1,7 +1,7 @@
 
 ### 微信小程序不使用scroll-view做的吸顶+锚点
 
-![效果图](http://files.git.oschina.net/group1/M00/07/8B/PaAvDFzJrFuAclGpAEmLXbHLtz4091.gif?token=d712178c581af56e3a11a63390cc2d2c&ts=1556720731&attname=QQ20190501-214917.gif&disposition=inline)
+![效果图](http://files.git.oschina.net/group1/M00/07/8D/PaAvDFzK_RmAe8eUAEiKrll48dQ904.gif?token=1c61aa5b1e8a8beb122c3b49b5ee80c9&ts=1556806938&attname=show_pic.gif&disposition=inline)
 
 ### 引入组件
 
@@ -53,8 +53,9 @@
 
 <font color=orange>注意：sync和init必须配合使用，否则无效。</font>
 使用场景如下：
-1.在sticky-item中数据为异步请求
-2.sticky-item中内容的需要实现显示/隐藏功能
+1） 在sticky-item中数据为异步请求
+2） sticky-item中内容的需要实现显示/隐藏功能
+
 
 4.init 当需要重新计算sticky-item内容器高度时，改变init的值为!init，使用示例如下
 
