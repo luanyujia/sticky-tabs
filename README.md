@@ -1,7 +1,16 @@
 
-### 微信小程序不使用scroll-view做的吸顶+锚点
+### 微信小程序吸顶+锚点组件
 
-![效果图](http://files.git.oschina.net/group1/M00/07/8D/PaAvDFzK_RmAe8eUAEiKrll48dQ904.gif?token=1c61aa5b1e8a8beb122c3b49b5ee80c9&ts=1556806938&attname=show_pic.gif&disposition=inline)
+### 体验
+
+<p align="center">
+  <img width="200" src="http://files.git.oschina.net/group1/M00/07/8D/PaAvDFzK_4yAQcyPAADABn6A2Wc070.jpg?token=ae2d8517260e4a8e5fa9689f16825af4&ts=1556807706&attname=qr_code.jpg&disposition=inline">
+</p>
+
+### 效果图
+
+![效果图](http://files.git.oschina.net/group1/M00/07/8D/PaAvDFzK_tiAUvfvAEmLXbHLtz4072.gif?token=3eb0a737a348d8218cd8d2a59d7e8e34&ts=1556807384&attname=show_pic.gif&disposition=inline)
+
 
 ### 引入组件
 
