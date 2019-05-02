@@ -50,6 +50,7 @@ Component({
     currentTab: 0,
     boxTopArr: [], // 存放子组件高度的数组
     scrollLock: false, // 点击tab时对滚动加锁
+    offset: 0, // 偏移量
   },
 
   /**
@@ -70,20 +71,26 @@ Component({
         scrollTop: boxTopArr[detail.key] + 1,
         duration: 400,
         complete() {
+          // todo 此处代码有时不生效
           _this.data.scrollLock = false;
-        }
+        },
       })
+      // _this.data.scrollLock = false;
     },
     addChildHeightToArr(item) {
       const boxTopArr = this.data.boxTopArr;
       if (!boxTopArr.length) boxTopArr.push(this.data.top);
-      const childTop = boxTopArr[boxTopArr.length - 1] + item;
-      boxTopArr.push(childTop);
+    
+      const top = boxTopArr[boxTopArr.length - 1] + item + this.data.offset;
+      boxTopArr.push(top);
       this.data.boxTopArr = boxTopArr;
     },
     // 监听到页面滚动
     _updateScrollTopChange(scrollTop) {
       if (this.data.scrollLock) return;
+
+      console.log('scrollTop', scrollTop)
+      console.log('boxTopArr', this.data.boxTopArr)
       let boxTopArr = this.data.boxTopArr;
       let currentTab = this.data.currentTab;
       for (let i = 1; i < boxTopArr.length; i++) {
@@ -109,6 +116,9 @@ Component({
           if (top > 0) {
             // 此处是为了避免当sticky中的tabs处于吸顶效果时，res.top为0会影响高度计算的问题
             this.data.top = top;
+          } else {
+            // 当处于吸顶效果时，为了避免所有的top计算有偏差，需要通过offset进行修订
+            this.data.offset = Math.abs(top) + this.data.top;
           }
           items.forEach((item, index) => {
             item.updateDataChange(index);

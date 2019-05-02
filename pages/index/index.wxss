@@ -5,6 +5,10 @@
   line-height: 200rpx;
 }
 
-.article{
+.wrap .box {
+  margin-bottom: 160rpx;
+}
+
+.article {
   line-height: 80rpx;
 }
