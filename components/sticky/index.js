@@ -71,7 +71,7 @@ Component({
     // 监听到页面滚动
     _updateScrollTopChange(scrollTop) {
       if (this.data.scrollLock) return;
-      console.log('监听到页面滚动')
+      // console.log('监听到页面滚动')
       let boxTopArr = this.data.boxTopArr;
       let currentTab = this.data.currentTab;
       for (let i = 1; i < boxTopArr.length; i++) {

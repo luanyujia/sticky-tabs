@@ -18,7 +18,7 @@
 
 在页面 `wxml` 中引入组件
 ```xml
-  <sticky scrollTop="{{scrollTop}}" navList="{{navList}}">
+  <sticky scrollTop="{{scrollTop}}" tabList="{{tabList}}">
       <sticky-item>
       </sticky-item>
   </sticky>
