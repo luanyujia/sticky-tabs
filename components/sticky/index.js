@@ -25,7 +25,20 @@ Component({
         this._updateScrollTopChange(val);
       }
     },
-    tabList: Array
+    tabList: Array,
+    sync: { // sticky-item中是否会存在容器高度改变的情况
+      type: Boolean,
+      value: false
+    },
+    init: { // 重新计算sticky-item中的容器高度的
+      type: Boolean,
+      value: false,
+      observer(val) {
+        if (this.data.sync) {
+          this._updateDataChange();
+        }
+      }
+    }
   },
 
   /**
@@ -71,7 +84,6 @@ Component({
     // 监听到页面滚动
     _updateScrollTopChange(scrollTop) {
       if (this.data.scrollLock) return;
-      // console.log('监听到页面滚动')
       let boxTopArr = this.data.boxTopArr;
       let currentTab = this.data.currentTab;
       for (let i = 1; i < boxTopArr.length; i++) {
@@ -90,10 +102,14 @@ Component({
       clearTimeout(this.data.timer);
       const items = this.getRelationNodes('../sticky-item/index');
       const timer = setTimeout(() => {
+        this.data.boxTopArr = [];
         const query = wx.createSelectorQuery().in(this);
-        query.select('.header').boundingClientRect((res) => {
+        query.select('.i-sticky').boundingClientRect((res) => {
           const top = res.top;
-          this.data.top = top;
+          if (top > 0) {
+            // 此处是为了避免当sticky中的tabs处于吸顶效果时，res.top为0会影响高度计算的问题
+            this.data.top = top;
+          }
           items.forEach((item, index) => {
             item.updateDataChange(index);
           })

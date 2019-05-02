@@ -27,7 +27,7 @@
 
 ### 主要属性
 
-tabList为吸顶tabs中对应的数据
+1.tabList为吸顶tabs中对应的数据
 ```json
     tabs: [{
       title: '锚点1'
@@ -37,7 +37,7 @@ tabList为吸顶tabs中对应的数据
 ```
 
 
-scrollTop为页面滚动的距离，使用示例如下
+2.scrollTop为页面滚动的距离，使用示例如下
 
 ```js
   onPageScroll(e) {
@@ -47,3 +47,33 @@ scrollTop为页面滚动的距离，使用示例如下
     })
   },
 ```
+
+
+3.sync 开启响应异步容器变化高度变化的开关。
+
+<font color=orange>注意：sync和init必须配合使用，否则无效。</font>
+使用场景如下：
+1.在sticky-item中数据为异步请求
+2.sticky-item中内容的需要实现显示/隐藏功能
+
+4.init 当需要重新计算sticky-item内容器高度时，改变init的值为!init，使用示例如下
+
+```xml
+  <l-sticky sync init="{{updateSticky}}" scrollTop="{{scrollTop}}" tabList="{{tabGroups}}">
+  </sticky>
+```
+
+```js
+  initSticky() {
+    this.setData({
+      updateSticky: !this.data.updateSticky
+    })
+  }
+```
+
+
+
+
+
+
+
