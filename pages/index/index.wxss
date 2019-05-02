@@ -6,7 +6,7 @@
 }
 
 .wrap .box {
-  margin-bottom: 160rpx;
+  /* margin-bottom: 400rpx; */
 }
 
 .article {

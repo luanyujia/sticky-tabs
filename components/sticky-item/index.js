@@ -29,7 +29,10 @@ Component({
       const boxTopArr = parent.data.boxTopArr;
       const length = boxTopArr.length;
       query.select(className).boundingClientRect((res) => {
-        parent.addChildHeightToArr(res.height);
+        parent.addChildHeightToArr({
+          height: res.height,
+          bottom: res.bottom
+        });
       }).exec()
     }
   }

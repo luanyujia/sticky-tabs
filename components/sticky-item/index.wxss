@@ -1,6 +1,7 @@
 /* components/sticky-item/index.wxss */
+
 .i-sticky-item {
   width: 100%;
-    overflow: hidden;
+  overflow: hidden;
   /* box-sizing: border-box; */
 }
