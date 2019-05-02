@@ -3,7 +3,7 @@
 
 ### 体验
 
-<p align="center">
+<p>
   <img width="200" src="http://files.git.oschina.net/group1/M00/07/8D/PaAvDFzK_4yAQcyPAADABn6A2Wc070.jpg?token=ae2d8517260e4a8e5fa9689f16825af4&ts=1556807706&attname=qr_code.jpg&disposition=inline">
 </p>
 
