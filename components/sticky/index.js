@@ -64,6 +64,7 @@ Component({
     onTabsChange({
       detail
     }) {
+      console.log('onTabsChange')
       let _this = this;
       this.setData({
         currentTab: detail.key,
@@ -94,6 +95,7 @@ Component({
     },
     // 监听到页面滚动
     _updateScrollTopChange(scrollTop) {
+      console.log('监听到页面滚动')
       if (this.data.scrollLock) return;
       let boxTopArr = this.data.boxTopArr;
       let currentTab = this.data.currentTab;

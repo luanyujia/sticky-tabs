@@ -11,5 +11,5 @@
       </sticky-item>
     </block>
   </sticky>
-  <!-- <view class='other'>底部内容</view> -->
+  <view class='other'>底部内容</view>
 </view>
