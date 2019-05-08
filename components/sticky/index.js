@@ -64,7 +64,6 @@ Component({
     onTabsChange({
       detail
     }) {
-      console.log('onTabsChange')
       let _this = this;
       this.setData({
         currentTab: detail.key,
@@ -73,13 +72,23 @@ Component({
       let boxTopArr = this.data.boxTopArr;
       wx.pageScrollTo({
         scrollTop: boxTopArr[detail.key] + 1,
-        duration: 450,
-        complete() {
-          // todo 此处代码有时不生效
-          _this.data.scrollLock = false;
-        },
+        duration: 400,
+        // fail() {
+        //   console.log('fail')
+        // },
+        // success() {
+        //   console.log('success')
+        // },
+        // complete() {
+        //   console.log('complete')
+        //   // todo 此处代码有时不生效
+        //   _this.data.scrollLock = false;
+        // },
       })
-      // _this.data.scrollLock = false;
+      // 解锁
+      setTimeout(() => {
+        _this.data.scrollLock = false;
+      }, 450)
     },
     addChildHeightToArr(item) {
       if (this.data.boxTopArr.length > this.data.childLength) {
@@ -95,8 +104,8 @@ Component({
     },
     // 监听到页面滚动
     _updateScrollTopChange(scrollTop) {
-      console.log('监听到页面滚动')
       if (this.data.scrollLock) return;
+      console.log('监听到页面滚动')
       let boxTopArr = this.data.boxTopArr;
       let currentTab = this.data.currentTab;
       const length = boxTopArr.length;
