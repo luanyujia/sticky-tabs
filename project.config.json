@@ -11,6 +11,8 @@
 	"libVersion": "1.9.91",
 	"appid": "wxc8e52e68f4d90eaa",
 	"projectname": "sticky-tabs",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

@@ -35,6 +35,9 @@ Component({
       value: false
     }
   },
+  data: {
+    scrollLeft: 0
+  },
   methods: {
     changeCurrent(val = this.data.current) {
       let items = this.getRelationNodes('../tab/index');
@@ -44,6 +47,9 @@ Component({
         items.forEach(item => {
           item.changeScroll(this.data.scroll);
           item.changeCurrent(item.data.key === val);
+          if (item.data.key === val) {
+
+          }
           item.changeCurrentColor(this.data.color);
           item.changeWidth(width);
         });

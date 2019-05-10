@@ -80,9 +80,12 @@
     })
   }
 ```
+5.scrollTab 当tabs中tab过多时，可以使用该属性为tabs开启滑动功能
 
-
-### 下一版本为tabs增加滑动功能
+```xml
+  <l-sticky scrollTab scrollTop="{{scrollTop}}" tabList="{{tabGroups}}">
+  </sticky>
+```
 
 
 

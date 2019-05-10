@@ -1,6 +1,6 @@
 <view class="i-sticky i-class">
   <view class="header">
-    <tabs current="{{currentTab}}" bind:change="onTabsChange" i-class="custom-sticky-tabs" color="#466ee6">
+    <tabs current="{{currentTab}}" scroll="{{scrollTab}}" bind:change="onTabsChange" i-class="custom-sticky-tabs" color="#466ee6">
       <block wx:for="{{tabList}}" wx:key="{{item.title}}">
         <tab i-class="custom-sticky-tab" i-class-title="custom-sticky-tab-title" i-class-tab-bar="custom-sticky-tab-bar" title="{{item.title}}" key="{{index}}"></tab>
       </block>

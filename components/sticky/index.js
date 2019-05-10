@@ -20,6 +20,9 @@ Component({
     }
   },
   properties: {
+    scrollTab: {
+      type: Boolean
+    },
     scrollTop: {
       type: Number,
       observer(val) {
