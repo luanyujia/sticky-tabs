@@ -1,6 +1,6 @@
 <view class='wrap'>
   <view class='other'>顶部内容</view>
-  <sticky sync init scrollTop="{{scrollTop}}" tabList="{{navList}}">
+  <sticky scrollTab sync init scrollTop="{{scrollTop}}" tabList="{{navList}}">
     <block wx:for="{{navList}}" wx:key="navList">
       <sticky-item>
         <view class='box' style='background:{{item.background}}'>

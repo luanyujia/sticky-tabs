@@ -26,7 +26,6 @@ Component({
   },
   lifetimes: {
     ready() {
-      if (this.data.current) this.scrollTo(true, 0);
     }
   },
   methods: {
@@ -51,22 +50,21 @@ Component({
       })
     },
     handleClickItem(e) {
-      const itemLeft = e.currentTarget.offsetLeft;
       const parent = this.getRelationNodes('../tabs/index')[0];
       parent.emitEvent(this.data.key);
-      this.scrollTo(false, itemLeft)
     },
-    scrollTo(firstLoad, itemLeft) {
+    scrollTo() {
       let itemWidth = 0;
       const parent = this.getRelationNodes('../tabs/index')[0];
       const query = wx.createSelectorQuery().in(this);
       query.select('.i-tabs-tab').boundingClientRect((res) => {
-        let scrollLeft = itemLeft;
-        if (firstLoad) scrollLeft = res.left;
         itemWidth = res.width;
         const windowWidth = wx.getSystemInfoSync().windowWidth;
+        let scrollLeft = 0;
+        scrollLeft = res.left - windowWidth / 2
+        const scrollDistance = parent.data.scrollDistance;
         parent.setData({
-          scrollLeft: scrollLeft - windowWidth / 2 + itemWidth / 2
+          scrollLeft: scrollLeft + scrollDistance + itemWidth / 2
         })
       }).exec()
     }

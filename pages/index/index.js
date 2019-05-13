@@ -97,65 +97,65 @@ Page({
           article: "列表四"
         }]
       },
-      // {
-      //   title: '锚点5',
-      //   background: '#f6f6e9',
-      //   content: [{
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }, {
-      //     article: "列表五"
-      //   }]
-      // }, {
-      //   title: '锚点6',
-      //   background: '#6abe83',
-      //   content: [{
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }, {
-      //     article: "列表六"
-      //   }]
-      // }
+      {
+        title: '锚点5',
+        background: '#f6f6e9',
+        content: [{
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }, {
+          article: "列表五"
+        }]
+      }, {
+        title: '锚点6',
+        background: '#6abe83',
+        content: [{
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }, {
+          article: "列表六"
+        }]
+      }
     ],
     timer: null, // 计时器
   },
