@@ -65,7 +65,9 @@ Component({
       this.data.timer = timer;
     },
     emitEvent(key) {
-      this.triggerEvent('change', { key });
+      this.triggerEvent('change', {
+        key
+      });
     },
     onScroll(e) {
       clearTimeout(this.data.scrollTimer);
