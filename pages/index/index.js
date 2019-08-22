@@ -97,67 +97,68 @@ Page({
           article: "列表四"
         }]
       },
-      {
-        title: '锚点5',
-        background: '#f6f6e9',
-        content: [{
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }, {
-          article: "列表五"
-        }]
-      }, {
-        title: '锚点6',
-        background: '#6abe83',
-        content: [{
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }, {
-          article: "列表六"
-        }]
-      }
+      // {
+      //   title: '锚点5',
+      //   background: '#f6f6e9',
+      //   content: [{
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }, {
+      //     article: "列表五"
+      //   }]
+      // }, {
+      //   title: '锚点6',
+      //   background: '#6abe83',
+      //   content: [{
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }, {
+      //     article: "列表六"
+      //   }]
+      // }
     ],
     timer: null, // 计时器
+    updateSticky: false
   },
 
   onPageScroll(e) {
@@ -166,8 +167,26 @@ Page({
       scrollTop
     })
   },
-
-
+  // 向锚点二的列表中增加数据
+  addData() {
+    let key = 'navList[1].content'
+    let data = this.data.navList[1].content
+    for (let i = 0; i < 10; i++) {
+      data = data.concat([{
+        article: "新增列表二"
+      }])
+    }
+    this.setData({
+      [key]: data
+    })
+    // 重新计算sticky-item高度
+    this.initSticky()
+  },
+  initSticky() {
+    this.setData({
+      updateSticky: !this.data.updateSticky
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

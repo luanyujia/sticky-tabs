@@ -1,6 +1,9 @@
 <view class='wrap'>
-  <view class='other'>顶部内容</view>
-  <sticky scrollTab sync init scrollTop="{{scrollTop}}" tabList="{{navList}}">
+  <view class='other' bindtap="addData">
+    <text>顶部内容</text>
+    <button style="200px" bind:tap="addData">为锚点2增加数据</button>
+  </view>
+  <sticky scrollTab sync init="{{updateSticky}}" scrollTop="{{scrollTop}}" tabList="{{navList}}">
     <block wx:for="{{navList}}" wx:key="navList">
       <sticky-item>
         <view class='box' style='background:{{item.background}}'>
