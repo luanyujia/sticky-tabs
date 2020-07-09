@@ -4,12 +4,12 @@
 ### 体验
 
 <p>
-  <img width="200" src="https://files.gitee.com/group1/M00/07/8D/PaAvDFzK_4yAQcyPAADABn6A2Wc070.jpg?token=0e4bcef2174ce9022231a368fd605ef9&ts=1584352198&attname=qr_code.jpg&disposition=inline">
+  <img width="200" src="https://files.gitee.com/group1/M00/07/8D/PaAvDFzK_4yAQcyPAADABn6A2Wc070.jpg?token=04eb4ecd97282cd84f872d12ca06227f&ts=1594297307&attname=qr_code.jpg&disposition=inline">
 </p>
 
 ### 效果图
 
-![效果图](https://files.gitee.com/group1/M00/0C/5C/wKgCNF5vS8WAOQ5MAAKsWOHGE0w030.gif?token=3587d01beb2b49c644643b0afa765a3a&ts=1584352198&attname=demo.gif&disposition=inline)
+![效果图](https://files.gitee.com/group1/M00/0C/5C/wKgCNF5vS8WAOQ5MAAKsWOHGE0w030.gif?token=842669476690dda69cc72886859ead42&ts=1594297307&attname=demo.gif&disposition=inline)
 
 
 ### 引入组件
