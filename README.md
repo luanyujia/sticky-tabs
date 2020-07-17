@@ -9,7 +9,7 @@
 
 ### 效果图
 
-![效果图](https://files.gitee.com/group1/M00/0C/5C/wKgCNF5vS8WAOQ5MAAKsWOHGE0w030.gif?token=842669476690dda69cc72886859ead42&ts=1594297307&attname=demo.gif&disposition=inline)
+![效果图](https://images.gitee.com/uploads/images/2020/0717/173107_30fe0ca3_1589898.gif)
 
 
 ### 引入组件
