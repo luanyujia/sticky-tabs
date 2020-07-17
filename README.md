@@ -4,7 +4,7 @@
 ### 体验
 
 <p>
-  <img width="200" src="https://files.gitee.com/group1/M00/07/8D/PaAvDFzK_4yAQcyPAADABn6A2Wc070.jpg?token=04eb4ecd97282cd84f872d12ca06227f&ts=1594297307&attname=qr_code.jpg&disposition=inline">
+  <img width="200" src="https://images.gitee.com/uploads/images/2020/0717/173155_6dc1c444_1589898.jpeg">
 </p>
 
 ### 效果图
