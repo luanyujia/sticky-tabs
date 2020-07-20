@@ -4,12 +4,12 @@
 ### 体验
 
 <p>
-  <img width="200" src="https://images.gitee.com/uploads/images/2020/0717/173155_6dc1c444_1589898.jpeg">
+  <img width="200" src="https://jansan.oss-cn-beijing.aliyuncs.com/qr_code.jpg?Expires=1595210985&OSSAccessKeyId=TMP.3KiJFy5Hhu773NxptNTCA17UR68JFgHdaTc8zyZWjpdXSQNtUe52TVZL9fRnfjSzUtJsgxKBCaecZavGUGYe5H3HHTNPsQ&Signature=3x7a0beRkWR4dg60LE6WXBL%2BEng%3D">
 </p>
 
 ### 效果图
 
-![效果图](https://images.gitee.com/uploads/images/2020/0717/173107_30fe0ca3_1589898.gif)
+![效果图](https://jansan.oss-cn-beijing.aliyuncs.com/demo.gif?Expires=1595210937&OSSAccessKeyId=TMP.3KiJFy5Hhu773NxptNTCA17UR68JFgHdaTc8zyZWjpdXSQNtUe52TVZL9fRnfjSzUtJsgxKBCaecZavGUGYe5H3HHTNPsQ&Signature=2orh6PUFJ3Aq7m6mS%2F4%2ByC2M3fg%3D)
 
 
 ### 引入组件
